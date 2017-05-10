@@ -13,7 +13,7 @@ var arrayTasks = {
 	},
 
 	square: function (arr) {
-		newArray = [];
+		var newArray = [];
 		for(item of arr){
 			newItem = item * item;
 			newArray.push(newItem);
@@ -21,9 +21,13 @@ var arrayTasks = {
 		return newArray;
 	},
 
-	// sum: function (arr) {
-		
-	// },
+	sum: function (arr) {
+		var total = 0;
+		for(item of arr){
+			total += item;
+		}
+		return total;
+	},
 
 	// findDuplicates: function (arr) {
 		
