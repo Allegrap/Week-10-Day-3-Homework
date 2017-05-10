@@ -30,12 +30,27 @@ var arrayTasks = {
 	},
 
 	// findDuplicates: function (arr) {
-		
+	// 	duplicates = [];
+	// 	for(item of arr){
+	// 		for(otherItem of duplicates){
+	// 			if(otherItem === item){
+	// 				duplicates.push(item);
+	// 			}
+	// 		}
+	// 	}
+	// 	return duplicates;
 	// },
 
-	// removeAndClone: function (arr, valueToRemove) {
-		
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+		newArray = [];
+
+		for(item of arr){
+			if(item != valueToRemove){
+				newArray.push(item);
+			}
+		}
+		return newArray;
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 		
